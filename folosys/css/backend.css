@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+p {
+    margin:0;
+}
+
+body {
+    padding: 20px;
+}
+nav {
+    align-items: center;
+    margin: 10px 0;
+    color: #fff;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 13px;
+    border-radius: 10px;
+    position: relative;
+    
+}
+
+nav .drop-dowsn-items {
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    background-color: rgba(0,0,0,.5);
+    width: 145px;
+    height: 150px;
+    border-radius: 20px;
+    transform: translate(-25px , 20px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease-in;
+}
+
+.opened {
+    opacity: 1 !important;
+    pointer-events: all !important;
+}
+
+nav .drop_click {
+    cursor: pointer;
+}
+
+.user-list {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+
+.title_ {
+    width: 100%;
+    height: 30px;
+    background-color: #bdbdbd;
+    padding-left: 10px;
+}
+
+.user_ {
+    width: 100%;
+    height: 100px;
+    margin: 10px 0;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 14px;
+}
+
+.pic__ {
+    width: 45%;
+    height: 100%;
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.det__ {
+    display: flex;
+    width: 55%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+.det__ p {
+    background-color: chartreuse;
+    padding: 1px;
+    margin: 7px;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+.write-post {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+}
+
+.write-post textarea {
+    height: 70%;
+}
+
+.write-post button {
+    margin: 20px 0;
+    width: 70px;
+    margin-left: auto;
+    padding: 10px 20px;
+    
+}
+.trending-now {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.trending-now .post_{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.trending-now .post_ .image_ {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 150px;
+    background-color: aquamarine
+}
+
+.post_detail_ {
+    padding: 10px;
+    width: 70%;
+}
+/*
+      <div class="trending-now">
+          <div class="title_"> Last Posts</div>
+          <div class="post_">
+            <div class="image_"></div>
+            <h5>@User_name</h5>
+            <p>title of post</p>
+          </div>
+      </div>*/
